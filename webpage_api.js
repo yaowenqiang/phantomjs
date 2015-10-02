@@ -76,6 +76,15 @@ page.open(url,function(status){
     page.render('image-500.png');
     console.log('Rendered image of ' + url + 'with width of 500px');
 
+    // define specific part
+    page.clipRect = {
+        left:0,
+        top:0,
+        width: 500,
+        height:300
+    };
+    page.render('image-header-500.png');
+    console.log('Rendered image of ' + url + ' partially');
     //exit PhantomJS
     // -> make sure it's inside of the callback
     phantom.exit();
