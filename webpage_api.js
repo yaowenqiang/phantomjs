@@ -39,6 +39,11 @@ console.log(
     'Opening ' + url + '.'
 
 );
+// set viewport size
+//page.viewportSize = {
+    //width: 1200,
+    //height:1000
+//};
 // open website of particulare url
 // -> two arguments
 page.open(url,function(status){
@@ -46,7 +51,31 @@ page.open(url,function(status){
     console.log('************************************************************');
     console.log('Opened ' + url + 'with status ' + status);
 
-    page.render('baidu.png');
+
+    // set viewport size
+    page.viewportSize = {
+        width: 1200,
+        height:1000
+    };
+    page.render('image-1000.png');
+    console.log('Rendered image of ' + url + 'with width of 10000px');
+
+    // set viewport size
+    page.viewportSize = {
+        width: 1200,
+        height:800
+    };
+    page.render('image-800.png');
+    console.log('Rendered image of ' + url + 'with width of 800px');
+
+    // set viewport size
+    page.viewportSize = {
+        width: 1200,
+        height:500
+    };
+    page.render('image-500.png');
+    console.log('Rendered image of ' + url + 'with width of 500px');
+
     //exit PhantomJS
     // -> make sure it's inside of the callback
     phantom.exit();
