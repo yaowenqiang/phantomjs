@@ -1,0 +1,25 @@
+/*run npm init to generate the package.json file*/
+/*and put task command in the script section*/
+/*usage: npm test*/
+{
+  "name": "phantomjs",
+  "version": "1.0.0",
+  "description": "Phantomjs demo",
+  "main": "1_1-example.js",
+  "scripts": {
+    "test": "phantomjs system_api.js jacky.yao"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaowenqiang/phantomjs.git"
+  },
+  "keywords": [
+    "phantomjs"
+  ],
+  "author": "yaowenqiang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaowenqiang/phantomjs/issues"
+  },
+  "homepage": "https://github.com/yaowenqiang/phantomjs#readme"
+}
