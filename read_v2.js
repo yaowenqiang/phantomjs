@@ -1,3 +1,4 @@
+//TODO 从命令行获取搜索的参数
 var page = require('webpage').create();
 testindex = 0,
 loadInProgress = false;
